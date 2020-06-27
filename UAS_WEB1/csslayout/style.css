@@ -1,0 +1,253 @@
+/*
+
+AUTHOR RAIHAN SEPTIAN
+
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type:none;
+  }
+
+  body {background-color: white;}
+  
+  #topnav {
+    overflow: hidden;
+    background-color: white;}
+
+  #topnav a {
+    float: right;
+    display: block;
+    color: #000000;
+    font-family: Arial;
+    font-size: 15px;
+    text-align: center;
+    padding: 30px 10px;
+    text-decoration: none;}
+
+  #topnav a:hover {
+    background-color: rgb(0, 210, 238);
+    color: black;}
+  
+  #center {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    font-size: 80px;}
+
+    #button {
+      background-color: #474fc4;
+      border: white;
+      color: white;
+      padding: 15px 32px;
+      box-shadow: 3px 2px 3px 3px black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      font-family: Arial;
+      font-style: oblique;
+      cursor: pointer;}
+
+      #button2 {
+        position: relative;
+        top: 50px;
+        background-color: #474fc4;
+        border: white;
+        color: white;
+        padding: 10px 25px;
+        box-shadow: 3px 2px 3px 3px gray;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        font-family: Arial;
+        font-style: oblique;
+        cursor: pointer;}
+
+  .thumb {
+    
+      height:100px;
+      width:210px;
+      top:136px;
+      left:14px;
+      position:relative;
+      background-size:contain;
+      box-shadow:-12px 0 0 12px #000;
+  }
+  .thumb:last-of-type {
+    box-shadow:0 0 0 12px #000;
+  }
+
+  .thumb:after {
+    content:attr(title);
+    font:normal normal 20pt 'impact';
+    position:relative;
+  }
+  .thumb:hover {
+      filter: grayscale(80%);
+      filter: url(grayscale.svg#greyscale);
+      filter: gray;
+  }
+  @-webkit-keyframes TMNT {
+      0%  { left: 0px; }
+      100% { left: -1200px; }
+  }
+  a.prev,a.next {
+    
+      height:91px;
+      position:absolute;
+      width:43px;
+      top:80%;
+      margin-top:-80px;
+      opacity:0.6;
+      text-indent:-99999px;
+      cursor:pointer;
+      -webkit-transition:opacity 200ms ease-out;
+  }
+  a.prev:hover,a.next:hover {
+      opacity:1;
+  }
+  .prev {
+      left:0;
+      background: grey url('../img/sprite.png') no-repeat -200px 25px;
+  }
+  .next {
+      right:0;
+      background: gray url('../img/sprite.png') no-repeat -167px 25px;
+  }
+  .slider {
+      height:100vh;
+      position: relative;
+      
+  }
+  .slide {
+      position:absolute;
+      height:100%;
+      width:100%;
+  }
+  .slider .slide:target {
+      z-index: 100;
+  }
+  .img {
+      top: 30%;
+      max-width:100%;
+      width:100%;
+      /*position:fixed;*/
+      left:0;
+  }
+ 
+  #spasi{line-height:40px;}
+    #spasi2{position: relative;
+      top: 30px}
+      #spasi3{position: relative;
+        top: 60px}
+      
+  
+  h4{line-height:60px;}
+  h6{line-height:10px;}
+  #h2{
+      position: relative;
+      top: 20px;}
+  .justify { 
+    position: relative;
+    top: 30px;
+    text-align: justify;}
+
+  u {
+    text-decoration: underline;
+    text-decoration-color: blue;
+  }
+
+  .newspaper {
+    border:1px ;
+    padding-right: 150px;
+    padding-left: 250px;
+    padding-top: 180px;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px;
+    font-family: Arial;}
+
+  .paper {
+    border:1px ;
+    padding-right: 150px;
+    padding-left: 250px;
+    padding-top: 30px;
+    padding-bottom: 120px;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px;
+    font-family: Arial;}
+
+    .newspaper2 {
+      background-color: #e3fdff;
+      border:1px ;
+      padding-right: 150px;
+      padding-left: 250px;
+      padding-top: 90px;
+      padding-bottom: 80px;
+      column-count: 2;
+      column-gap: 20px;
+      column-rule: 1px;
+      font-family: Arial;}
+     
+      .newspaper3 {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 80px 150px 80px 250px;
+        column-count: 2;
+        column-gap: 20px;
+        font-family: Arial;}
+
+        .footer {
+          background-color: white;
+          padding-top: 90px;
+          text-align: center;}
+        
+          .grid-container {
+            padding-right: 150px;
+      padding-left: 250px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-bottom: 80px;
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-gap: 1px;
+          background-color: #e3fdff;
+          
+     
+        }
+
+        .header {
+        font-family: Arial, Helvetica, sans-serif;
+          background-color: #e3fdff;
+          padding: 60px;
+          text-align: center;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid white;
+          text-align: center;
+          
+        }
+        
+        div.polaroid {
+          width: 70%;
+          background-color: white;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          margin-bottom: 25px;
+        }
+        
+        div.container {
+          text-align: center;
+          padding: 10px 20px 10px 20px;
+        }
+      
